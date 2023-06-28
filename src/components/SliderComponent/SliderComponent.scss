@@ -1,0 +1,25 @@
+.slider-component {
+  display: block;
+  width: 300px;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+  @media (min-width: 1024px) {
+    width: 600px;
+  }
+
+
+  &__img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 100;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

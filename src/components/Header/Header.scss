@@ -18,6 +18,9 @@
 
 .nav {
 	&__list {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;;
 		max-width: 1200px;
 		display: flex;
 		flex: row;
@@ -28,39 +31,24 @@
 	}
 
 	&__link {
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
 		text-decoration: none;
 		color: black;
-		padding: 0px 34px;
+		padding: 41px 34px;
 		text-transform: uppercase;
 		font-size: 12px;
 		font-weight: 800;
 		letter-spacing: 0.04em;
 		position: relative;
-
-		transition: color 0.3s ease;
-
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: -39px; /* Змінено */
-			left: 0;
-			height: 3px;
-			width: 100%;
-
-			transition: background-color 0.3s ease;
-		}
+    border-bottom: 3px solid #00000000;
 
 		&--active {
 			color: black;
-			border-radius: 50%;
-
-			&::after {
-				background: black;
-			}
-		}
-
-		&:hover {
-			color: black;
+			border-color: #000;
 		}
 	}
 }

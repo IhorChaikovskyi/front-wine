@@ -8,6 +8,8 @@
 	border-top: 1px solid black;
 	position: relative;
 	bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 
 
   &__logo,
@@ -28,7 +30,7 @@
 
 		&-link {
 			text-decoration: none;
-			color: white;
+			color: #000;
 			cursor: pointer;
 		}
   }
